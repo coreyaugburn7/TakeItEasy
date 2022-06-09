@@ -107,7 +107,6 @@
                     <connections>
                         <outlet property="content" destination="bgQ-TL-8Eo" id="CbR-uJ-m4E"/>
                         <outlet property="name" destination="Ihu-if-mFS" id="kMS-Hr-IRj"/>
-                        <outlet property="title" destination="Ihu-if-mFS" id="9fP-e9-XLe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I0v-st-6Az" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
