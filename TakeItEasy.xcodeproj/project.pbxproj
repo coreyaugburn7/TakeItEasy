@@ -18,6 +18,7 @@
 		84B56C3B2851806900B52088 /* DbHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B56C3A2851806900B52088 /* DbHandler.swift */; };
 		84B56C462851875600B52088 /* Journal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B56C442851875600B52088 /* Journal+CoreDataClass.swift */; };
 		84B56C472851875600B52088 /* Journal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B56C452851875600B52088 /* Journal+CoreDataProperties.swift */; };
+		84B56C49285238B200B52088 /* NoteContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B56C48285238B200B52088 /* NoteContent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		84B56C3A2851806900B52088 /* DbHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbHandler.swift; sourceTree = "<group>"; };
 		84B56C442851875600B52088 /* Journal+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Journal+CoreDataClass.swift"; sourceTree = "<group>"; };
 		84B56C452851875600B52088 /* Journal+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Journal+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		84B56C48285238B200B52088 /* NoteContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteContent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				70DB81A4284FEACB0050D524 /* AppDelegate.swift */,
 				84B56C3A2851806900B52088 /* DbHandler.swift */,
 				84B56C38285156A200B52088 /* NoteController.swift */,
+				84B56C48285238B200B52088 /* NoteContent.swift */,
 				70DB81A6284FEACB0050D524 /* SceneDelegate.swift */,
 				70DB81A8284FEACB0050D524 /* ViewController.swift */,
 				70DB81AA284FEACB0050D524 /* Main.storyboard */,
@@ -157,6 +160,7 @@
 				70DB81A5284FEACB0050D524 /* AppDelegate.swift in Sources */,
 				84B56C472851875600B52088 /* Journal+CoreDataProperties.swift in Sources */,
 				84B56C3B2851806900B52088 /* DbHandler.swift in Sources */,
+				84B56C49285238B200B52088 /* NoteContent.swift in Sources */,
 				84B56C39285156A200B52088 /* NoteController.swift in Sources */,
 				70DB81A7284FEACB0050D524 /* SceneDelegate.swift in Sources */,
 				70DB81AF284FEACB0050D524 /* TakeItEasy.xcdatamodeld in Sources */,

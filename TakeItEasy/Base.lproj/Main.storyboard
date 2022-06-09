@@ -69,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="885.50724637681162" y="80.357142857142847"/>
         </scene>
-        <!--View Controller-->
+        <!--Note Content-->
         <scene sceneID="R96-Yy-LTD">
             <objects>
-                <viewController storyboardIdentifier="content" id="8fk-Fk-vl2" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="content" id="8fk-Fk-vl2" customClass="NoteContent" customModule="TakeItEasy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kss-86-6pL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,6 +104,11 @@
                         <color key="backgroundColor" systemColor="systemGray2Color"/>
                     </view>
                     <navigationItem key="navigationItem" id="h8R-2a-1I2"/>
+                    <connections>
+                        <outlet property="content" destination="bgQ-TL-8Eo" id="CbR-uJ-m4E"/>
+                        <outlet property="name" destination="Ihu-if-mFS" id="kMS-Hr-IRj"/>
+                        <outlet property="title" destination="Ihu-if-mFS" id="9fP-e9-XLe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I0v-st-6Az" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -2,7 +2,7 @@
 //  DbHandler.swift
 //  TakeItEasy
 //
-//  Created by admin on 6/8/22.
+//  Created by jacob on 6/8/22.
 //
 
 import Foundation
@@ -29,7 +29,7 @@ class DbHandler{
     
     func retrieveNote(title: String) -> Journal{
         var entry = Journal()
-        var fetchrequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Journal")
+        let fetchrequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Journal")
         fetchrequest.predicate = NSPredicate(format: "title == %@", title)
         do{
             let request = try context?.fetch(fetchrequest) as! [Journal]
