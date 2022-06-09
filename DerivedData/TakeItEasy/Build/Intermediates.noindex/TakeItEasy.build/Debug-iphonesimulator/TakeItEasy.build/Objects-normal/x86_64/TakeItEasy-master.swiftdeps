@@ -1,0 +1,13 @@
+version: "Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)"
+options: "7c210285ad91bfaec743ad1cdc75c0a36a39d4994ee93a2203d801d0d6081829"
+build_start_time: [1654787769, 385828971]
+build_end_time: [1654787769, 984747886]
+inputs:
+  "/Users/admin/Desktop/projects/TakeItEasy/Journal+CoreDataClass.swift": [1654739142, 298265933]
+  "/Users/admin/Desktop/projects/TakeItEasy/Journal+CoreDataProperties.swift": [1654739173, 985627174]
+  "/Users/admin/Desktop/projects/TakeItEasy/TakeItEasy/AppDelegate.swift": [1654634155, 834880828]
+  "/Users/admin/Desktop/projects/TakeItEasy/TakeItEasy/DbHandler.swift": [1654785875, 604431629]
+  "/Users/admin/Desktop/projects/TakeItEasy/TakeItEasy/NoteContent.swift": [1654785875, 546666145]
+  "/Users/admin/Desktop/projects/TakeItEasy/TakeItEasy/NoteController.swift": [1654785875, 412417888]
+  "/Users/admin/Desktop/projects/TakeItEasy/TakeItEasy/SceneDelegate.swift": [1654634155, 836270809]
+  "/Users/admin/Desktop/projects/TakeItEasy/TakeItEasy/ViewController.swift": [1654634155, 837029457]

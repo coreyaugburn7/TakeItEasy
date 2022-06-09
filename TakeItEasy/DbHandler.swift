@@ -57,6 +57,7 @@ class DbHandler{
                 entry.body = body
                 try context?.save()
             }
+            print("saved")
         }
         catch{
             print("data not overwritten")
