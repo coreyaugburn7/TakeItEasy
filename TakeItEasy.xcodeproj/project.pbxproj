@@ -14,6 +14,7 @@
 		70DB81AF284FEACB0050D524 /* TakeItEasy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 70DB81AD284FEACB0050D524 /* TakeItEasy.xcdatamodeld */; };
 		70DB81B1284FEACD0050D524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70DB81B0284FEACD0050D524 /* Assets.xcassets */; };
 		70DB81B4284FEACD0050D524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70DB81B2284FEACD0050D524 /* LaunchScreen.storyboard */; };
+		84B56C39285156A200B52088 /* NoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B56C38285156A200B52088 /* NoteController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		70DB81B0284FEACD0050D524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70DB81B3284FEACD0050D524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70DB81B5284FEACD0050D524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B56C38285156A200B52088 /* NoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				70DB81A6284FEACB0050D524 /* SceneDelegate.swift */,
 				70DB81A8284FEACB0050D524 /* ViewController.swift */,
 				70DB81AA284FEACB0050D524 /* Main.storyboard */,
+				84B56C38285156A200B52088 /* NoteController.swift */,
 				70DB81B0284FEACD0050D524 /* Assets.xcassets */,
 				70DB81B2284FEACD0050D524 /* LaunchScreen.storyboard */,
 				70DB81B5284FEACD0050D524 /* Info.plist */,
@@ -143,6 +146,7 @@
 			files = (
 				70DB81A9284FEACB0050D524 /* ViewController.swift in Sources */,
 				70DB81A5284FEACB0050D524 /* AppDelegate.swift in Sources */,
+				84B56C39285156A200B52088 /* NoteController.swift in Sources */,
 				70DB81A7284FEACB0050D524 /* SceneDelegate.swift in Sources */,
 				70DB81AF284FEACB0050D524 /* TakeItEasy.xcdatamodeld in Sources */,
 			);
