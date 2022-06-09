@@ -32,6 +32,6 @@ class NoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBAction func add(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let note = storyboard.instantiateViewController(withIdentifier: "content")
-        
+        self.present(note, animated: true)
     }
 }

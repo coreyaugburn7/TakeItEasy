@@ -57,7 +57,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="add:" destination="3e2-yx-FMG" eventType="touchUpInside" id="0ak-fw-cwp"/>
-                                    <segue destination="8fk-Fk-vl2" kind="show" id="r8z-M3-guB"/>
                                 </connections>
                             </button>
                         </subviews>
