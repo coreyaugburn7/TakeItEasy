@@ -877,8 +877,35 @@
         },
         {
           "kind": "Function",
+          "name": "retrieveAllNote",
+          "printedName": "retrieveAllNote()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Array",
+              "printedName": "[TakeItEasy.Journal]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Journal",
+                  "printedName": "TakeItEasy.Journal",
+                  "usr": "c:@M@TakeItEasy@objc(cs)Journal"
+                }
+              ],
+              "usr": "s:Sa"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:10TakeItEasy9DbHandlerC15retrieveAllNoteSayAA7JournalCGyF",
+          "mangledName": "$s10TakeItEasy9DbHandlerC15retrieveAllNoteSayAA7JournalCGyF",
+          "moduleName": "TakeItEasy",
+          "isOpen": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
           "name": "updateNote",
-          "printedName": "updateNote(title:body:)",
+          "printedName": "updateNote(orig:title:body:)",
           "children": [
             {
               "kind": "TypeNominal",
@@ -896,11 +923,17 @@
               "name": "String",
               "printedName": "Swift.String",
               "usr": "s:SS"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
             }
           ],
           "declKind": "Func",
-          "usr": "s:10TakeItEasy9DbHandlerC10updateNote5title4bodyySS_SStF",
-          "mangledName": "$s10TakeItEasy9DbHandlerC10updateNote5title4bodyySS_SStF",
+          "usr": "s:10TakeItEasy9DbHandlerC10updateNote4orig5title4bodyySS_S2StF",
+          "mangledName": "$s10TakeItEasy9DbHandlerC10updateNote4orig5title4bodyySS_S2StF",
           "moduleName": "TakeItEasy",
           "isOpen": true,
           "funcSelfKind": "NonMutating"
@@ -1618,10 +1651,248 @@
       ]
     },
     {
+      "kind": "Import",
+      "name": "CoreData",
+      "printedName": "CoreData",
+      "declKind": "Import",
+      "moduleName": "TakeItEasy"
+    },
+    {
       "kind": "TypeDecl",
       "name": "NoteController",
       "printedName": "NoteController",
       "children": [
+        {
+          "kind": "Var",
+          "name": "table",
+          "printedName": "table",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Array",
+              "printedName": "[TakeItEasy.Journal]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Journal",
+                  "printedName": "TakeItEasy.Journal",
+                  "usr": "c:@M@TakeItEasy@objc(cs)Journal"
+                }
+              ],
+              "usr": "s:Sa"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:10TakeItEasy14NoteControllerC5tableSayAA7JournalCGvp",
+          "mangledName": "$s10TakeItEasy14NoteControllerC5tableSayAA7JournalCGvp",
+          "moduleName": "TakeItEasy",
+          "isOpen": true,
+          "declAttributes": [
+            "Custom",
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 0,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Array",
+                  "printedName": "[TakeItEasy.Journal]",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Journal",
+                      "printedName": "TakeItEasy.Journal",
+                      "usr": "c:@M@TakeItEasy@objc(cs)Journal"
+                    }
+                  ],
+                  "usr": "s:Sa"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:10TakeItEasy14NoteControllerC5tableSayAA7JournalCGvg",
+              "mangledName": "$s10TakeItEasy14NoteControllerC5tableSayAA7JournalCGvg",
+              "moduleName": "TakeItEasy",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Array",
+                  "printedName": "[TakeItEasy.Journal]",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Journal",
+                      "printedName": "TakeItEasy.Journal",
+                      "usr": "c:@M@TakeItEasy@objc(cs)Journal"
+                    }
+                  ],
+                  "usr": "s:Sa"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:10TakeItEasy14NoteControllerC5tableSayAA7JournalCGvs",
+              "mangledName": "$s10TakeItEasy14NoteControllerC5tableSayAA7JournalCGvs",
+              "moduleName": "TakeItEasy",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:10TakeItEasy14NoteControllerC5tableSayAA7JournalCGvM",
+              "mangledName": "$s10TakeItEasy14NoteControllerC5tableSayAA7JournalCGvM",
+              "moduleName": "TakeItEasy",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "tv",
+          "printedName": "tv",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "WeakStorage",
+              "printedName": "UIKit.UITableView?"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "c:@M@TakeItEasy@objc(cs)NoteController(py)tv",
+          "mangledName": "$s10TakeItEasy14NoteControllerC2tvSo11UITableViewCSgvp",
+          "moduleName": "TakeItEasy",
+          "isOpen": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Custom",
+            "HasStorage",
+            "ReferenceOwnership",
+            "IBOutlet",
+            "ObjC"
+          ],
+          "fixedbinaryorder": 1,
+          "ownership": 1,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UITableView?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UITableView",
+                      "printedName": "UIKit.UITableView",
+                      "usr": "c:objc(cs)UITableView"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@TakeItEasy@objc(cs)NoteController(im)tv",
+              "mangledName": "$s10TakeItEasy14NoteControllerC2tvSo11UITableViewCSgvg",
+              "moduleName": "TakeItEasy",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "ImplicitlyUnwrappedOptional",
+                  "printedName": "UIKit.UITableView?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "UITableView",
+                      "printedName": "UIKit.UITableView",
+                      "usr": "c:objc(cs)UITableView"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "c:@M@TakeItEasy@objc(cs)NoteController(im)setTv:",
+              "mangledName": "$s10TakeItEasy14NoteControllerC2tvSo11UITableViewCSgvs",
+              "moduleName": "TakeItEasy",
+              "implicit": true,
+              "isOpen": true,
+              "declAttributes": [
+                "ObjC"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:10TakeItEasy14NoteControllerC2tvSo11UITableViewCSgvM",
+              "mangledName": "$s10TakeItEasy14NoteControllerC2tvSo11UITableViewCSgvM",
+              "moduleName": "TakeItEasy",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
         {
           "kind": "Function",
           "name": "tableView",

@@ -46,14 +46,28 @@ class DbHandler{
         return entry
     }
     
-    func updateNote(title: String, body: String){
+    func retrieveAllNote() -> [Journal]{
+        var entry = [Journal()]
+        let fetchrequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Journal")
+        do{
+            let request = try context?.fetch(fetchrequest) as! [Journal]
+            entry = request
+        }
+        catch{
+            print("notes not found")
+        }
+        return entry
+    }
+    
+    func updateNote(orig: String, title: String, body: String){
         var entry = Journal()
         var fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Journal")
-        fetchRequest.predicate = NSPredicate(format: "title == %@")
+        fetchRequest.predicate = NSPredicate(format: "title == %@", orig)
         do{
             let ent = try context?.fetch(fetchRequest) as! [Journal]
             if (ent.count != 0){
                 entry = (ent.first)!
+                entry.title = title
                 entry.body = body
                 try context?.save()
             }

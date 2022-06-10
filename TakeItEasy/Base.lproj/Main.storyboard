@@ -32,7 +32,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="71g-NK-078">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="71g-NK-078" userLabel="tableView">
                                 <rect key="frame" x="20" y="144" width="374" height="658"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -47,6 +47,10 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="3e2-yx-FMG" id="AjW-hj-AX0"/>
+                                    <outlet property="delegate" destination="3e2-yx-FMG" id="yPJ-1Z-zEr"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbH-yI-zRz">
                                 <rect key="frame" x="350" y="95" width="64" height="41"/>
@@ -56,7 +60,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="51"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="add:" destination="3e2-yx-FMG" eventType="touchUpInside" id="0ak-fw-cwp"/>
+                                    <action selector="add:" destination="3e2-yx-FMG" eventType="touchUpInside" id="XEl-MZ-oJT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -64,8 +68,12 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="mGt-B1-o4S"/>
+                    <connections>
+                        <outlet property="tv" destination="71g-NK-078" id="7j2-NL-2Fc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dbL-Tp-L0D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="idK-Se-j0r"/>
             </objects>
             <point key="canvasLocation" x="885.50724637681162" y="80.357142857142847"/>
         </scene>

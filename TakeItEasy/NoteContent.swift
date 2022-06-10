@@ -22,7 +22,8 @@ class NoteContent: UIViewController {
         content.text = body
     }
     override func viewDidDisappear(_ animated: Bool) {
-        DbHandler.dbHandler.updateNote(title: name.text!, body: content.text!)
+        print("disapeared")
+        DbHandler.dbHandler.updateNote(orig: header, title: name.text!, body: content.text!)
     }
 
 }
